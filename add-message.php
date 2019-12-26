@@ -44,7 +44,7 @@ if ($pick != 1 && $pick != 0) $errors[] = "Отметка важности пе�
 
 if ( empty($errors) )
 {
-    $connect = mysqli_connect("localhost", "id10026645_administrator", "8895304025dr", "id10026645_school");
+    $connect = mysqli_connect("localhost", "your_database_login", "your_database_password", "database_name");
     $request1 = mysqli_query ($connect, "select * FROM `users` WHERE name = \"$login\"");
     $request2 = mysqli_query ($connect, "select * FROM `groups` WHERE name = \"$gname\"");
     $res1 = mysqli_fetch_assoc($request1);
