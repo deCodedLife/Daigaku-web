@@ -45,7 +45,7 @@ if ( $ttime != $date) $errors[] = "Токен устарел";
 
 if ( empty($errors))
 {
-    $connect = mysqli_connect("localhost", "id10026645_administrator", "8895304025dr", "id10026645_school");
+    $connect = mysqli_connect("localhost", "your_database_login", "your_database_password", "database_name");
     $request = mysqli_query  ($connect, "select * FROM `users` WHERE name = \"$login\"");
     $res = mysqli_fetch_assoc($request);
     if ( $res["name"] != $login ) $errors[] = "Пользователь не существует!";
