@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
-$connect = mysqli_connect("localhost", "id10026645_administrator", "8895304025dr", "id10026645_school");
+$connect = mysqli_connect("localhost", "your_database_login", "your_database_password", "database_name");
 $errors  = array();
 
 $symbols = array(
