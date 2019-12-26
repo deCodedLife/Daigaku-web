@@ -17,7 +17,7 @@ if ( !isset( $id ) )  $errors[] = "Id Реферата не указан";
 if ( trim( $token ) == "" ) $errors[] = "Токен не указан";
 
 if ( empty( $errors ) ) {
-  $connect = mysqli_connect("localhost", "id10026645_administrator", "8895304025dr", "id10026645_school");
+    $connect = mysqli_connect("localhost", "your_database_login", "your_database_password", "database_name");
   $request = mysqli_query  ($connect, "select * FROM `users` WHERE name = \"$login\"");
   $res = mysqli_fetch_assoc($request);
   $ctoken = base64_encode($res["name"]."*".$res["pass"]."*".$date_);
